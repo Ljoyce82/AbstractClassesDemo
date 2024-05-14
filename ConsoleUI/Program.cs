@@ -41,27 +41,38 @@ namespace ConsoleUI
              * 
              * Set the properties values with object initializer syntax
              */
-            var hella = new Car();
-            hella.Make = "Archer";
-            hella.Model = "Hella EC-D 1360";
-            hella.Year = "2077";
-            hella.HasTrunk = true;
+            var hella = new Car() {
+                Make = "Archer",
+                Model = "Hella EC-D 1360",
+                Year = "2077",
+                HasTrunk = true,
+            };
 
-            var nazare = new MotorCycle();
-            nazare.Make = "Arch";
-            nazare.Model = "Nazare";
-            nazare.Year = "2077";
-            nazare.HasNitrus = true;
+            var nazare = new MotorCycle()
+            {
+                Make = "Arch",
+                Model = "Nazare",
+                Year = "2077",
+                HasNitrus = true,
 
-            Vehicle mizutani = new Car();
-            mizutani.Make = "Arch";
-            mizutani.Model = "Mizutani";
-            mizutani.Year = "2077";
+            };
 
-            Vehicle itsumade = new MotorCycle();
-            itsumade.Make = "Arch";
-            itsumade.Model = "Itsumade";
-            itsumade.Year = "2077";
+            Vehicle mizutani = new Car()
+            { 
+            Make = "Arch",
+            Model = "Mizutani",
+            Year = "2077",
+            HasTrunk = true,
+            };
+
+
+            Vehicle itsumade = new MotorCycle()
+            {
+               Make = "Arch",
+               Model = "Itsumade",
+               Year = "2077",
+               HasNitrus= true,
+            };
 
             /*
              * Add the 4 vehicles to the list
